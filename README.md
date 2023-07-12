@@ -87,7 +87,7 @@ The Unit tests will be executed using Jest, and the results will be displayed in
 
 The Unit tests will be executed using Jest, and the results will be displayed in the console. The test folder (__tests__/) contains around 17 
 unit tests, Test Suites for each and every Components like Achievements.js , CareerObjective.js , Education.js , Experience.js , formValidation.js etc.
-
+Note : Test may fails when Document Generation API is not available.
 ![image](https://github.com/nipunarora098/Resume-Builder-Adobe/assets/74128691/b28c804f-3e92-4d1d-ab2b-aa7e6e711da9)
 
 
