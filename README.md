@@ -15,13 +15,11 @@ The Resume Builder project consists of an API and a user interface built with Re
 
 ## Features
 The Resume Builder project includes the following features:
-- Template Selection: Users can choose from a variety of pre-built resume templates to customize their resumes.
 - User Input: Users can input their personal information, including contact details, skills, experiences, education, and any other relevant details required for the resume.
 - Resume Generation: The API processes the user input and merges it with the selected template to generate a professional-looking resume in PDF format.
-- PDF Download autmatically.
 - Error Handling: The system handles and displays appropriate error messages in case of any issues or missing information during the resume generation process.
-- API Integration: The API interacts with the Adobe Document Generation API to merge the template and user data, ensuring accurate and high-quality resume generation.
-- Testing: Frontend and Backend includes unit tests to ensure the reliability and correctness of the API and frontend components.
+- Seamless integration with the Adobe PDF Services Extract API.
+- Frontend and Backend includes unit tests to ensure the reliability and correctness of the API and frontend components.
 
 
 ## Prerequisites
