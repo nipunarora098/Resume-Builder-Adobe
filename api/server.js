@@ -21,9 +21,10 @@ app.post("/resume", async (req, res) => {
   if (fs.existsSync(resumePath)) {
     fs.unlinkSync(resumePath);
   }
+  let resumeFilePath = "" ;
   try {
     // Call the generateResume function from the resumeGenerator module
-    const resumeFilePath = await generateResume(data);
+    resumeFilePath = await generateResume(data);
     if (resumeFilePath == "Data contains missing Values") {
       res.status(500).send("Error sending Resume");
       return;
@@ -36,8 +37,7 @@ app.post("/resume", async (req, res) => {
       fs.unlinkSync(resumeFilePath);
     });
   } catch (err) {
-    // For test file because test file not able to receive the file
-    const resumeFilePath = await generateResume(data);
+
     console.log("Exception encountered while executing operation", err);
     res.status(500).send(resumeFilePath);
   }

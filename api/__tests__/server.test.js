@@ -59,10 +59,8 @@ describe("Resume Generator API", () => {
     };
     const response = await request(app).post("/resume").send(resumeData);
     // if pdf generated it is saved in this location
-    expect(response["text"]).toContain("resume.pdf");
+    expect(response["status"]).toBe(200);
 
-    // Ensure the file is deleted after sending
-    fs.unlinkSync(response["text"]);
   });
   // Test case 2
   it("should handle errors when template id entry entries is missing", async () => {
