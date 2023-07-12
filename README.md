@@ -38,26 +38,69 @@ To set up the project locally, follow these steps:
 	
 2. Setup Frontend .
    - Go to client directory
-	```shell
-	cd frontend-resume-builder
-
- 
- - Install Dependancies
-	```shell
- 	npm init
-  
-	npm install
- - Start Frontend
- 	```shell
- 	npm start
+		```shell
+		cd frontend-resume-builder
+   - Install Dependancies
+		```shell
+	 	npm init
+		npm install
+   - Start Frontend
+	 	```shell
+	 	npm start
 2. Set up the API:
    - Go to api directory
-	```shell
+		```shell
+	 	cd api
+   -  Install Dependancies
+		```shell
+	 	npm init
+	 	npm install
+   - Start backend
+		```shell
+	 	npm run dev
+
+
+ ## Testing 
+ ### 1. Frontend Unit Testing
+- Go to Frontend directory
+     ```shell
+ 	cd frontend-resume-builder
+- Run Test
+  ```shell
+ 	npm test
+- In case no test case runs use the --watchAll flag.The --watchAll flag forces Jest to run all tests, regardless of file changes.
+  ```shell
+ 	npm test -- --watchAll
+The Unit tests will be executed using Jest, and the results will be displayed in the console. The test folder (__tests__/) contains around 11 Test Suites containing 51 tests, Test Suites for each and every Components like Achievements.js , CareerObjective.js , Education.js , Experience.js , formValidation.js etc.
+
+
+![image](https://github.com/nipunarora098/Resume-Builder-Adobe/assets/74128691/492e3023-e001-4083-842a-b3d0938d5973)
+
+
+### 2. API unit Testing
+- Go to Frontend directory
+     ```shell
  	cd api
--  Install Dependancies
-	```shell
- 	npm init	
- 	npm install
-- Start backend
-	```shell
- 	npm run dev
+- Run Test
+  ```shell
+ 	npx test
+
+The Unit tests will be executed using Jest, and the results will be displayed in the console. The test folder (__tests__/) contains around 17 
+unit tests, Test Suites for each and every Components like Achievements.js , CareerObjective.js , Education.js , Experience.js , formValidation.js etc.
+Note : Test may fails when Document Generation API is not available.
+![image](https://github.com/nipunarora098/Resume-Builder-Adobe/assets/74128691/b28c804f-3e92-4d1d-ab2b-aa7e6e711da9)
+
+
+
+## User Interface
+![image](https://github.com/nipunarora098/Resume-Builder-Adobe/assets/74128691/cc1fab6a-f70e-4238-8a36-fb7e652307bd)
+![image](https://github.com/nipunarora098/Resume-Builder-Adobe/assets/74128691/2fd205d7-8bcd-41c6-90ca-549b216c930d)
+![image](https://github.com/nipunarora098/Resume-Builder-Adobe/assets/74128691/d30d46b1-7c68-484a-8bbb-301c7e595609)
+
+
+## Test Sample : 
+ ResumeBuilder Curl Request : https://drive.google.com/file/d/1JSP-xgqLYuOdWXV9NulbaX6IPHHL7zC5/view?usp=drive_link
+ 
+Output Resume : https://drive.google.com/file/d/1MH3mmtqG8qp1ZABV1ZnrC1OF3-vd_jyN/view?usp=sharing
+## Conclusion
+The Resume Builder API project aims to provide a convenient and efficient way to generate professional resumes using pre-built templates and user data. By following the instructions in this README file, you can set up and use the API to create PDF resumes. 
