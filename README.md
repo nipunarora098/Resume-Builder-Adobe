@@ -61,3 +61,17 @@ To set up the project locally, follow these steps:
 - Start backend
 	```shell
  	npm run dev
+
+
+ ## Testing 
+ ### Frontend Testing
+- Go to Frontend directory
+     ```shell
+ 	cd frontend-resume-builder
+- Run Test
+  ```shell
+ 	npm test
+The Unit tests will be executed using Jest, and the results will be displayed in the console. The test folder (__tests__/) contains around 51 tests, each focusing on a specific component like achievement.js, skills.js, etc.
+      
+## Conclusion
+The Resume Builder API project aims to provide a convenient and efficient way to generate professional resumes using pre-built templates and user data. By following the instructions in this README file, you can set up and use the API to create PDF resumes. 
