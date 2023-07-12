@@ -71,6 +71,9 @@ To set up the project locally, follow these steps:
 - Run Test
   ```shell
  	npm test
+- In case no test case runs use the --watchAll flag.The --watchAll flag forces Jest to run all tests, regardless of file changes.
+  ```shell
+ 	npm test -- --watchAll
 The Unit tests will be executed using Jest, and the results will be displayed in the console. The test folder (__tests__/) contains around 51 tests, each focusing on a specific component like achievement.js, skills.js, etc.
       
 ## Conclusion
